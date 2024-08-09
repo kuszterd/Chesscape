@@ -52,7 +52,7 @@ public class ChessBoard : MonoBehaviour
                     // Instantiate the key fragment prefab above the square
                     if (keyFragmentPrefab != null)
                     {
-                        Vector3 position = square.transform.localPosition + new Vector3(0, 1.5f, 0); // Adjust height as needed
+                        Vector2 position = square.transform.position;
                         Instantiate(keyFragmentPrefab, position, Quaternion.identity);
                     }
                 }
@@ -67,7 +67,7 @@ public class ChessBoard : MonoBehaviour
                     // Instantiate the key fragment prefab above the square
                     if (wallPrefab != null)
                     {
-                        Vector3 position = square.transform.localPosition + new Vector3(0, 1.5f, 0); // Adjust height as needed
+                        Vector2 position = square.transform.position;
                         Instantiate(wallPrefab, position, Quaternion.identity);
                     }
                 }
@@ -76,7 +76,7 @@ public class ChessBoard : MonoBehaviour
                     // Instantiate the key fragment prefab above the square
                     if (playerPrefab != null)
                     {
-                        Vector3 position = square.transform.localPosition + new Vector3(0, 1.5f, 0); // Adjust height as needed
+                        Vector2 position = square.transform.position;
                         Instantiate(playerPrefab, position, Quaternion.identity);
                     }
                 }
